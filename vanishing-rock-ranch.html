@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vanishing Rock Ranch — 200 acres of open desert near Joshua Tree</title>
+<meta name="description" content="Secluded open-desert camping on 200 acres in the Dale mining district, Twentynine Palms. Wide-open night skies, endless off-road trails, and Joshua Tree National Park 30 minutes away. From $28.50 a night.">
+<meta property="og:title" content="Vanishing Rock Ranch — Twentynine Palms, California">
+<meta property="og:description" content="Camp wherever you like on 200 acres of open Mojave desert. Campfires, dogs and dirt bikes welcome. Joshua Tree's north entrance is half an hour out.">
+<meta property="og:image" content="https://hipcamp-res.cloudinary.com/image/upload/c_limit,f_auto,h_1200,q_60,w_1920/v1705864318/campground-photos/jal1tf2ymav7ewegkwy0.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,300..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   TOKENS — bleached sand, oxidised iron, sunset, desert night
+   ============================================================ */
+:root{
+  --bone:#F7F0E5;
+  --sand:#EDE1D1;
+  --sand-2:#DCC9AE;
+  --ink:#241C15;
+  --ink-soft:#6A5A47;
+  --iron:#9C4523;
+  --sun:#DE8A34;
+  --sage:#7E8B69;
+  --night:#141833;
+  --night-2:#1E2444;
+  --star:#E9E5F2;
+  --line:rgba(36,28,21,.16);
+  --line-night:rgba(233,229,242,.20);
+
+  --display:"Anybody","Arial Narrow",Impact,sans-serif;
+  --text:"Space Grotesk",ui-monospace,"SF Mono",Menlo,monospace;
+
+  --gutter:clamp(20px,5vw,76px);
+  --maxw:1320px;
+  --ease:cubic-bezier(.2,.6,.3,1);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--sand);color:var(--ink);
+  font-family:var(--text);font-size:17px;font-weight:350;line-height:1.6;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+::selection{background:var(--sun);color:var(--ink)}
+:focus-visible{outline:3px solid var(--iron);outline-offset:3px}
+.night :focus-visible{outline-color:var(--sun)}
+
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.sec{padding-block:clamp(76px,10vw,148px)}
+.night{background:var(--night);color:var(--star)}
+
+h1,h2,h3,h4{
+  font-family:var(--display);margin:0;line-height:.94;
+  font-variation-settings:"wdth" 118,"wght" 800;
+  text-transform:uppercase;letter-spacing:-.005em;
+}
+h2{font-size:clamp(2rem,5.4vw,3.9rem)}
+h3{font-size:clamp(1.2rem,2.2vw,1.7rem);font-variation-settings:"wdth" 112,"wght" 700}
+p{margin:0 0 1.1em}
+.lede{font-size:clamp(1.05rem,1.6vw,1.28rem);line-height:1.55;max-width:38ch}
+.prose p{max-width:62ch}
+.muted{color:var(--ink-soft)}
+.night .muted{color:rgba(233,229,242,.6)}
+
+/* survey-marker section heading */
+.head{margin-bottom:44px}
+.head .eyebrow{
+  display:flex;align-items:center;gap:12px;margin:0 0 14px;
+  font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--iron);
+}
+.head .eyebrow::before{content:"";width:26px;height:2px;background:var(--iron);flex:none}
+.night .head .eyebrow{color:var(--sun)}
+.night .head .eyebrow::before{background:var(--sun)}
+.head .sub{max-width:52ch;margin:16px 0 0;color:var(--ink-soft)}
+.night .head .sub{color:rgba(233,229,242,.66)}
+
+/* ============================ BUTTONS ============================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  background:var(--ink);color:var(--bone);border:2px solid var(--ink);
+  padding:.85em 1.6em;border-radius:0;cursor:pointer;text-decoration:none;
+  font-family:var(--display);font-variation-settings:"wdth" 105,"wght" 700;
+  text-transform:uppercase;font-size:.9rem;letter-spacing:.04em;
+  transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease);
+}
+.btn:hover{background:var(--iron);border-color:var(--iron);color:var(--bone);transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink)}
+.btn:active{transform:none;box-shadow:none}
+.btn--ghost{background:transparent;color:var(--ink)}
+.btn--ghost:hover{background:var(--ink);border-color:var(--ink);color:var(--bone);box-shadow:5px 5px 0 var(--iron)}
+.night .btn--ghost{color:var(--star);border-color:var(--star)}
+.night .btn--ghost:hover{background:var(--sun);border-color:var(--sun);color:var(--night);box-shadow:5px 5px 0 rgba(233,229,242,.35)}
+.btn--sun{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.btn--sun:hover{background:var(--bone);border-color:var(--bone);color:var(--ink);box-shadow:5px 5px 0 var(--iron)}
+.btn--lg{padding:1.05em 2.1em;font-size:1rem}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+
+/* ============================ NAV ============================ */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:80;display:flex;align-items:center;gap:24px;
+  padding:16px var(--gutter);color:var(--bone);
+  transition:background .45s var(--ease),color .45s var(--ease),padding .45s var(--ease),box-shadow .45s var(--ease);
+}
+.nav.stuck{background:var(--bone);color:var(--ink);padding-block:10px;box-shadow:0 1px 0 var(--line)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:1;min-width:0}
+.brand .glyph{
+  width:34px;height:34px;flex:none;border:2px solid currentColor;
+  display:grid;place-items:center;transform:rotate(45deg);
+  transition:transform .55s var(--ease);
+}
+.brand .glyph i{width:8px;height:8px;background:currentColor;display:block}
+.brand:hover .glyph{transform:rotate(225deg)}
+.brand b{
+  font-family:var(--display);font-variation-settings:"wdth" 112,"wght" 700;
+  text-transform:uppercase;font-size:.98rem;letter-spacing:.02em;white-space:nowrap;
+}
+.navlinks{display:flex;gap:28px;align-items:center}
+.navlinks a{
+  text-decoration:none;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;
+  position:relative;padding:5px 0;
+}
+.navlinks a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:currentColor;transition:right .38s var(--ease)}
+.navlinks a:hover::after{right:0}
+.nav:not(.stuck) .btn{background:transparent;border-color:var(--bone);color:var(--bone)}
+.nav:not(.stuck) .btn:hover{background:var(--bone);color:var(--ink);box-shadow:5px 5px 0 rgba(0,0,0,.28)}
+.burger{display:none;width:44px;height:44px;border:2px solid currentColor;background:none;cursor:pointer;position:relative}
+.burger span{position:absolute;left:10px;right:10px;height:2px;background:currentColor;transition:transform .35s var(--ease),opacity .2s}
+.burger span:nth-child(1){top:14px}
+.burger span:nth-child(2){top:20px}
+.burger span:nth-child(3){top:26px}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+.drawer{
+  position:fixed;inset:0;z-index:79;background:var(--night);color:var(--star);
+  display:flex;flex-direction:column;justify-content:center;padding:0 var(--gutter);
+  clip-path:inset(0 0 100% 0);transition:clip-path .6s var(--ease);pointer-events:none;
+}
+.drawer.open{clip-path:inset(0 0 0 0);pointer-events:auto}
+.drawer a{
+  font-family:var(--display);font-variation-settings:"wdth" 120,"wght" 800;text-transform:uppercase;
+  font-size:clamp(1.7rem,7.5vw,2.6rem);text-decoration:none;padding:11px 0;
+  border-bottom:1px solid var(--line-night);
+}
+.drawer .meta{margin-top:26px;font-size:.82rem;color:rgba(233,229,242,.6)}
+
+/* ============================ HERO ============================ */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--night)}
+.hero__img{position:absolute;inset:0}
+.hero__img img{width:100%;height:100%;object-fit:cover;transform:scale(1.09);animation:drift 28s var(--ease) forwards}
+@keyframes drift{to{transform:scale(1)}}
+.hero__scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,51,.6) 0%,rgba(20,24,51,.1) 32%,rgba(20,24,51,.5) 66%,rgba(20,24,51,.92) 100%)}
+.hero__inner{position:relative;width:100%;padding-top:128px;padding-bottom:clamp(26px,5vh,54px)}
+.hero h1{
+  color:var(--bone);font-size:clamp(2.4rem,11.4vw,9rem);
+  font-variation-settings:"wdth" 62,"wght" 800;
+  animation:widen 1.5s cubic-bezier(.2,.7,.25,1) .35s forwards;
+  margin-bottom:24px;
+}
+@keyframes widen{to{font-variation-settings:"wdth" 128,"wght" 800}}
+.hero__sub{
+  color:rgba(247,240,229,.9);max-width:44ch;font-size:clamp(1rem,1.4vw,1.16rem);
+  margin-bottom:32px;opacity:0;animation:fade .9s var(--ease) 1.1s forwards;
+}
+@keyframes fade{to{opacity:1}}
+
+.marks{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:2px solid rgba(247,240,229,.4);
+  opacity:0;animation:fade .9s var(--ease) 1.25s forwards;margin:0;
+}
+.marks div{padding:15px 18px 0;border-left:1px solid rgba(247,240,229,.22)}
+.marks div:first-child{border-left:0;padding-left:0}
+.marks dt{
+  font-family:var(--display);font-variation-settings:"wdth" 108,"wght" 700;
+  font-size:clamp(1.2rem,2.5vw,1.95rem);color:var(--bone);line-height:1;
+}
+.marks dd{margin:7px 0 0;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(247,240,229,.66)}
+
+.cue{
+  position:absolute;right:var(--gutter);bottom:calc(clamp(26px,5vh,54px) + 104px);
+  writing-mode:vertical-rl;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(247,240,229,.7);display:flex;align-items:center;gap:12px;margin:0;
+  opacity:0;animation:fade .8s 1.6s forwards;
+}
+.cue::after{content:"";width:1px;height:54px;background:linear-gradient(var(--sun),transparent)}
+
+/* ============================ TICKER ============================ */
+.ticker{background:var(--iron);color:var(--bone);overflow:hidden;padding:11px 0}
+.ticker__track{display:flex;width:max-content;animation:slide 48s linear infinite}
+.ticker:hover .ticker__track{animation-play-state:paused}
+.ticker span{
+  font-family:var(--display);font-variation-settings:"wdth" 108,"wght" 600;text-transform:uppercase;
+  font-size:clamp(.78rem,1.4vw,1rem);letter-spacing:.08em;
+  padding:0 26px;white-space:nowrap;display:flex;align-items:center;gap:26px;
+}
+.ticker span::after{content:"";width:6px;height:6px;background:var(--bone);transform:rotate(45deg);flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ============================ STORY ============================ */
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(34px,6vw,84px);align-items:start}
+.story__media{position:sticky;top:92px}
+.story__media img{width:100%;aspect-ratio:5/6;object-fit:cover}
+.story__cap{margin-top:12px;font-size:.78rem;color:var(--ink-soft)}
+.story .prose p{font-size:1.04rem}
+.host{margin-top:32px;padding-top:22px;border-top:2px solid var(--ink);display:flex;align-items:center;gap:14px}
+.host img{width:56px;height:56px;object-fit:cover;flex:none;border-radius:50%}
+.host b{
+  display:block;font-family:var(--display);font-variation-settings:"wdth" 110,"wght" 700;
+  text-transform:uppercase;font-size:1.02rem;
+}
+.host small{color:var(--ink-soft);font-size:.82rem}
+
+/* ============================ NIGHT SKY ============================ */
+.sky{position:relative;overflow:hidden}
+.starfield{position:absolute;inset:0;pointer-events:none}
+.starfield i{position:absolute;background:var(--star);border-radius:50%;opacity:.75}
+@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.95}}
+.sky__inner{position:relative}
+.sky__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,72px);align-items:center}
+.sky h2{color:var(--bone)}
+.sky__stat{display:flex;flex-wrap:wrap;gap:36px;margin-top:34px}
+.sky__stat b{
+  display:block;font-family:var(--display);font-variation-settings:"wdth" 112,"wght" 800;
+  font-size:clamp(1.7rem,3.6vw,2.6rem);color:var(--sun);line-height:1;
+}
+.sky__stat small{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(233,229,242,.62)}
+.sky__media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* ============================ DOING ============================ */
+.doing{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ink);border:2px solid var(--ink)}
+.do{
+  background:var(--sand);padding:30px 26px 34px;position:relative;overflow:hidden;
+  transition:background .4s var(--ease),color .4s var(--ease);
+}
+.do:hover{background:var(--ink);color:var(--bone)}
+.do .n{
+  font-family:var(--display);font-variation-settings:"wdth" 100,"wght" 700;
+  font-size:.76rem;letter-spacing:.16em;color:var(--iron);display:block;margin-bottom:16px;
+}
+.do:hover .n{color:var(--sun)}
+.do h3{margin-bottom:10px}
+.do p{font-size:.92rem;margin:0;color:var(--ink-soft)}
+.do:hover p{color:rgba(247,240,229,.8)}
+
+/* ============================ SITES ============================ */
+.sites{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.5vw,34px)}
+.site{border:2px solid var(--ink);background:var(--bone);display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.site:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--iron)}
+.site__pic{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--sand-2)}
+.site__pic img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.site:hover .site__pic img{transform:scale(1.06)}
+.site__flag{
+  position:absolute;top:0;left:0;background:var(--ink);color:var(--bone);
+  padding:.42em .8em;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+}
+.site__body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.site__body h3{margin-bottom:8px}
+.site__spec{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--iron);margin-bottom:14px}
+.site__body .blurb{font-size:.95rem;color:var(--ink-soft);flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 20px}
+.tag{font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:.36em .7em;border:1px solid var(--line)}
+.tag--yes{border-color:var(--sage);color:#5C6A49}
+.tag--no{border-color:rgba(156,69,35,.5);color:var(--iron)}
+.site .btn{align-self:flex-start}
+
+/* ============================ BRING / DONT ============================ */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px)}
+.plist{list-style:none;margin:0;padding:0}
+.plist li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.plist li:first-child{border-top:1px solid var(--line)}
+.plist .mk{
+  font-family:var(--display);font-variation-settings:"wdth" 100,"wght" 800;
+  color:var(--sage);flex:none;width:22px;font-size:1rem;line-height:1.5;
+}
+.plist--no .mk{color:var(--iron)}
+.plist b{display:block;font-size:.96rem;font-weight:600}
+.plist small{display:block;color:var(--ink-soft);font-size:.84rem;line-height:1.5}
+
+/* ============================ GALLERY ============================ */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:2px}
+.gitem{overflow:hidden;cursor:zoom-in;position:relative;border:0;padding:0;background:var(--night-2)}
+.gitem img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.gitem:hover img{transform:scale(1.07)}
+.gitem::after{content:"";position:absolute;inset:0;background:var(--sun);opacity:0;mix-blend-mode:multiply;transition:opacity .4s}
+.gitem:hover::after{opacity:.22}
+.a1{grid-column:span 3;aspect-ratio:3/2}
+.a2{grid-column:span 3;aspect-ratio:3/2}
+.a3{grid-column:span 2;aspect-ratio:1/1}
+.a4{grid-column:span 2;aspect-ratio:1/1}
+.a5{grid-column:span 2;aspect-ratio:1/1}
+.a6{grid-column:span 4;aspect-ratio:2/1}
+.a7{grid-column:span 2;aspect-ratio:1/1}
+
+.lightbox{position:fixed;inset:0;z-index:120;background:rgba(10,12,26,.97);display:none;place-items:center;padding:clamp(16px,4vw,56px)}
+.lightbox.on{display:grid}
+.lightbox img{max-width:100%;max-height:82vh;object-fit:contain}
+.lb-btn{position:absolute;background:transparent;border:2px solid var(--star);color:var(--star);width:52px;height:52px;cursor:pointer;font-size:1.2rem;display:grid;place-items:center;transition:background .3s,color .3s}
+.lb-btn:hover{background:var(--star);color:var(--night)}
+.lb-close{top:22px;right:22px}
+.lb-prev{left:clamp(10px,2vw,28px);top:50%;transform:translateY(-50%)}
+.lb-next{right:clamp(10px,2vw,28px);top:50%;transform:translateY(-50%)}
+.lb-count{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:var(--star);font-size:.78rem;letter-spacing:.14em;margin:0}
+
+/* ============================ REVIEWS ============================ */
+.rrow{display:flex;gap:2px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.rcard{
+  flex:0 0 min(390px,84vw);scroll-snap-align:start;
+  border:2px solid var(--ink);background:var(--bone);padding:26px 24px;display:flex;flex-direction:column;
+}
+.rcard .q{
+  font-family:var(--display);font-variation-settings:"wdth" 112,"wght" 700;text-transform:uppercase;
+  font-size:1.08rem;line-height:1.16;margin-bottom:14px;
+}
+.rcard .body{font-size:.92rem;color:var(--ink-soft);flex:1}
+.rcard .who{margin:8px 0 0;padding-top:14px;border-top:1px solid var(--line);font-size:.78rem;letter-spacing:.04em}
+.rcard .who span{color:var(--ink-soft)}
+.rnav{display:flex;gap:2px;margin-top:20px}
+.rnav button{width:48px;height:48px;border:2px solid var(--ink);background:transparent;cursor:pointer;transition:background .3s,color .3s}
+.rnav button:hover{background:var(--ink);color:var(--bone)}
+.note{font-size:.78rem;color:var(--ink-soft);margin-top:20px;max-width:64ch}
+
+/* ============================ GETTING HERE ============================ */
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{
+  counter-increment:s;display:grid;grid-template-columns:auto 1fr;gap:22px;
+  padding:22px 0;border-bottom:1px solid var(--line-night);transition:padding-left .4s var(--ease);
+}
+.steps li:first-child{border-top:1px solid var(--line-night)}
+.steps li:hover{padding-left:12px}
+.steps li::before{
+  content:counter(s,decimal-leading-zero);
+  font-family:var(--display);font-variation-settings:"wdth" 100,"wght" 800;
+  color:var(--sun);font-size:.9rem;letter-spacing:.06em;padding-top:4px;
+}
+.steps h3{color:var(--bone);margin-bottom:6px}
+.steps p{margin:0;font-size:.94rem;color:rgba(233,229,242,.72);max-width:58ch}
+
+/* ============================ BOOKING ============================ */
+.book{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,5vw,72px);align-items:start}
+.book h2{color:var(--bone)}
+.book .lede{color:rgba(233,229,242,.8)}
+.pricebox{margin-top:28px;border:2px solid var(--line-night);padding:22px}
+.pline{display:flex;justify-content:space-between;gap:16px;padding:8px 0;font-size:.92rem}
+.pline.total{
+  border-top:1px solid var(--line-night);margin-top:8px;padding-top:16px;align-items:baseline;
+  font-family:var(--display);font-variation-settings:"wdth" 112,"wght" 700;text-transform:uppercase;font-size:1.35rem;
+}
+.pline.total span:last-child{color:var(--sun)}
+
+form{display:grid;gap:18px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field label{
+  display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  margin-bottom:8px;color:rgba(233,229,242,.8);
+}
+.field input,.field select,.field textarea{
+  width:100%;background:rgba(233,229,242,.06);color:var(--bone);
+  border:2px solid var(--line-night);border-radius:0;padding:.8em .9em;
+  font-family:var(--text);font-size:.96rem;transition:border-color .3s,background .3s;
+}
+.field textarea{resize:vertical;min-height:92px}
+.field input:hover,.field select:hover{border-color:rgba(222,138,52,.6)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--sun);background:rgba(233,229,242,.1)}
+.field select option{background:var(--night);color:var(--bone)}
+.field input::placeholder,.field textarea::placeholder{color:rgba(233,229,242,.38)}
+.field input[type="date"]{color-scheme:dark}
+.hint{display:block;font-size:.76rem;color:rgba(233,229,242,.58);margin:7px 0 0}
+.hint.warn{color:#F2A97E}
+.field.err input,.field.err select{border-color:var(--iron);background:rgba(156,69,35,.18)}
+
+.stepper{display:flex;align-items:center;border:2px solid var(--line-night)}
+.stepper button{width:50px;height:50px;background:rgba(233,229,242,.06);border:0;cursor:pointer;color:var(--bone);font-size:1.15rem;transition:background .25s,color .25s}
+.stepper button:hover:not([disabled]){background:var(--sun);color:var(--night)}
+.stepper button[disabled]{opacity:.3;cursor:not-allowed}
+.stepper output{flex:1;text-align:center;font-weight:600}
+
+.checks{display:grid;gap:11px}
+.check{display:flex;align-items:flex-start;gap:12px;cursor:pointer;font-size:.92rem;user-select:none}
+.check input{position:absolute;opacity:0;width:0;height:0}
+.check .box{
+  width:24px;height:24px;border:2px solid var(--line-night);flex:none;margin-top:1px;
+  display:grid;place-items:center;transition:background .25s,border-color .25s;
+}
+.check .box::after{content:"";width:10px;height:10px;background:var(--sun);transform:scale(0);transition:transform .25s var(--ease)}
+.check input:checked + .box{border-color:var(--sun)}
+.check input:checked + .box::after{transform:scale(1)}
+.check input:focus-visible + .box{outline:3px solid var(--sun);outline-offset:3px}
+
+.formnote{font-size:.76rem;color:rgba(233,229,242,.56)}
+.success{border:2px solid var(--sun);padding:30px 26px;background:rgba(222,138,52,.1);display:none}
+.success.on{display:block}
+.success h3{color:var(--bone);margin-bottom:10px}
+.success p{color:rgba(233,229,242,.85);font-size:.94rem;margin:0}
+form.done{display:none}
+
+/* ============================ FOOTER ============================ */
+.foot{background:var(--ink);color:var(--sand);padding-block:clamp(54px,7vw,90px) 32px}
+.foot__top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:42px;border-bottom:1px solid rgba(237,225,209,.2)}
+.foot h3{font-size:clamp(1.7rem,4.4vw,3rem);color:var(--bone);margin-bottom:20px;max-width:14ch}
+.foot h4{font-family:var(--text);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sun);margin-bottom:14px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.foot ul a{text-decoration:none;font-size:.9rem;opacity:.8;transition:opacity .25s}
+.foot ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:3px}
+.foot__bot{padding-top:22px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:.76rem;opacity:.6}
+
+/* ============================ REVEALS ============================ */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* ============================================================
+   ROUNDING PASS — subtle 6px across every surface
+   ============================================================ */
+:root{--r:6px;--r-sm:4px}
+.btn,.field input,.field select,.field textarea,.stepper,.check .box,
+.site,.rcard,.gitem,.site__pic,.tag,.lb-btn,.lightbox img,
+.story__media img,.sky__media img,.pricebox,.success,.rnav button,
+.burger,.doing,.nav.stuck,.brand .glyph,.marks{border-radius:var(--r)}
+.stepper button{border-radius:0}
+.site__flag{border-radius:var(--r) 0 var(--r) 0}
+body.bar-on{padding-bottom:74px}
+.doing{overflow:hidden}
+.rrow{gap:14px}
+.rnav{gap:8px}
+.gal{gap:6px}
+
+/* softer elevation on cards, hard offset kept for buttons only */
+.site:hover{transform:translateY(-5px);box-shadow:0 22px 46px -26px rgba(36,28,21,.62)}
+.rcard{transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease)}
+.rcard:hover{transform:translateY(-4px);box-shadow:0 18px 38px -24px rgba(36,28,21,.5)}
+
+/* ============================================================
+   SITE CARD CAROUSEL
+   ============================================================ */
+.carousel{position:absolute;inset:0;overflow:hidden;border-radius:var(--r)}
+.carousel .track{display:flex;height:100%;transition:transform .55s var(--ease);will-change:transform;touch-action:pan-y}
+.carousel .track img{min-width:100%;width:100%;height:100%;object-fit:cover}
+.site:hover .carousel img{transform:none}
+.cbtn{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:38px;height:38px;border-radius:50%;border:0;cursor:pointer;
+  background:rgba(247,240,229,.92);color:var(--ink);
+  display:grid;place-items:center;font-size:1.1rem;line-height:1;
+  opacity:0;transition:opacity .3s var(--ease),background .25s,transform .25s;
+}
+.cbtn:hover{background:var(--bone);transform:translateY(-50%) scale(1.08)}
+.cbtn.prev{left:10px}
+.cbtn.next{right:10px}
+.site:hover .cbtn,.carousel:focus-within .cbtn{opacity:1}
+.cdots{position:absolute;bottom:11px;left:50%;transform:translateX(-50%);display:flex;gap:6px}
+.cdots button{
+  width:7px;height:7px;padding:0;border:0;border-radius:99px;cursor:pointer;
+  background:rgba(247,240,229,.55);transition:background .3s,width .3s var(--ease);
+}
+.cdots button[aria-current="true"]{background:var(--bone);width:20px}
+.ccount{
+  position:absolute;top:10px;right:10px;background:rgba(20,24,51,.72);color:var(--bone);
+  font-size:.68rem;letter-spacing:.1em;padding:.3em .6em;border-radius:var(--r-sm);
+}
+
+/* ============================================================
+   EXPANDABLE DETAIL
+   ============================================================ */
+.site__actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:4px}
+.more{
+  background:none;border:0;cursor:pointer;padding:.5em 0;
+  font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--iron);
+  display:inline-flex;align-items:center;gap:9px;
+}
+.more:hover{color:var(--ink)}
+.more .chev{
+  width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:rotate(45deg) translate(-2px,-2px);transition:transform .35s var(--ease);
+}
+.more[aria-expanded="true"] .chev{transform:rotate(225deg) translate(-2px,-2px)}
+.detail{height:0;overflow:hidden;transition:height .45s var(--ease)}
+.detail .inner{padding:18px 0 4px}
+.detail dl{margin:0 0 14px;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:.88rem}
+.detail dt{color:var(--iron);letter-spacing:.06em;text-transform:uppercase;font-size:.7rem;padding-top:3px}
+.detail dd{margin:0;color:var(--ink-soft)}
+.detail p{font-size:.9rem;color:var(--ink-soft);margin:0}
+
+/* ============================================================
+   STICKY BOOKING BAR
+   ============================================================ */
+.sbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;
+  background:var(--bone);border-top:2px solid var(--ink);
+  padding:12px var(--gutter);
+  display:flex;align-items:center;gap:18px;
+  transform:translateY(115%);transition:transform .45s var(--ease);
+  box-shadow:0 -14px 34px -26px rgba(36,28,21,.7);
+}
+.sbar.on{transform:translateY(0)}
+.sbar__price{flex:none}
+.sbar__price b{
+  font-family:var(--display);font-variation-settings:"wdth" 110,"wght" 700;
+  font-size:1.24rem;line-height:1;display:block;
+}
+.sbar__price small{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.sbar__mid{flex:1;min-width:0;font-size:.82rem;color:var(--ink-soft);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sbar .btn{flex:none}
+@media (max-width:620px){
+  .sbar{gap:12px;padding:10px var(--gutter)}
+  .sbar__mid{display:none}
+  .sbar .btn{padding:.8em 1.2em;font-size:.82rem}
+}
+
+/* ============================ RESPONSIVE ============================ */
+@media (max-width:1000px){
+  .navlinks{display:none}
+  .burger{display:block}
+  .nav > .btn{display:none}
+  .story,.book,.split,.sky__grid{grid-template-columns:1fr}
+  .story__media{position:static}
+  .doing{grid-template-columns:1fr 1fr}
+  .sites{grid-template-columns:1fr}
+  .foot__top{grid-template-columns:1fr 1fr}
+  .foot__top > div:first-child{grid-column:1/-1}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .marks{grid-template-columns:1fr 1fr;gap:0}
+  .marks div:nth-child(3){border-left:0;padding-left:0}
+  .marks div:nth-child(-n+2){padding-bottom:14px;border-bottom:1px solid rgba(247,240,229,.22)}
+  .marks div:nth-child(n+3){padding-top:14px}
+  .doing{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .a1,.a2,.a6{grid-column:span 2;aspect-ratio:3/2}
+  .a3,.a4,.a5,.a7{grid-column:span 1;aspect-ratio:1/1}
+  .frow{grid-template-columns:1fr}
+  .cue{display:none}
+  .foot__top{grid-template-columns:1fr}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-delay:0ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .hero h1{font-variation-settings:"wdth" 118,"wght" 800}
+  .hero__img img{transform:scale(1)}
+  .hero__sub,.marks,.cue{opacity:1}
+  .rv{opacity:1;transform:none}
+  .cbtn{opacity:1}
+  .sbar{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <span class="glyph" aria-hidden="true"><i></i></span>
+    <b>Vanishing Rock Ranch</b>
+  </a>
+  <nav class="navlinks" aria-label="Primary">
+    <a href="#land">The land</a>
+    <a href="#sky">Night sky</a>
+    <a href="#sites">Sites</a>
+    <a href="#photos">Photos</a>
+    <a href="#arrive">Getting here</a>
+  </nav>
+  <a class="btn" href="#book">Check dates</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="drawer" id="drawer">
+  <a href="#land">The land</a>
+  <a href="#sky">Night sky</a>
+  <a href="#sites">Sites</a>
+  <a href="#photos">Photos</a>
+  <a href="#arrive">Getting here</a>
+  <a href="#book">Book a night</a>
+  <p class="meta">Twentynine Palms, California — hosted by Teala C.</p>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__img">
+    <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_2400,q_auto/v1705864318/campground-photos/jal1tf2ymav7ewegkwy0.jpg" alt="Open desert terrain at Vanishing Rock Ranch with mountains on the horizon">
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="hero__inner wrap">
+    <h1>Vanishing<br>Rock Ranch</h1>
+    <p class="hero__sub">Two hundred acres of open Mojave desert in the old Dale mining district. Pick a spot anywhere you like, build a fire, and watch a sky with nothing in the way of it. Joshua Tree's north entrance is half an hour out.</p>
+    <dl class="marks">
+      <div><dt>200</dt><dd>Acres of open desert</dd></div>
+      <div><dt>30 min</dt><dd>To Joshua Tree NP</dd></div>
+      <div><dt>100%</dt><dd>Recommend, 8 reviews</dd></div>
+      <div><dt>$28.50</dt><dd>Per night</dd></div>
+    </dl>
+  </div>
+  <p class="cue">Scroll</p>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track" id="ticker">
+    <span>Camp wherever you like</span><span>Campfires allowed</span><span>Dogs welcome</span>
+    <span>Dirt bikes &amp; side-by-sides</span><span>An open gold mine</span><span>2WD passable</span>
+    <span>No neighbours in sight</span>
+    <span>Camp wherever you like</span><span>Campfires allowed</span><span>Dogs welcome</span>
+    <span>Dirt bikes &amp; side-by-sides</span><span>An open gold mine</span><span>2WD passable</span>
+    <span>No neighbours in sight</span>
+  </div>
+</div>
+
+<!-- ============ STORY ============ -->
+<section class="sec wrap" id="land">
+  <div class="story">
+    <div class="story__media rv">
+      <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1400,q_auto/v1705864414/campground-photos/qsnmvk6tovj7obf2wcr4.jpg" alt="Wide view of the open land at Vanishing Rock Ranch" loading="lazy">
+      <p class="story__cap">Level ground, mountains behind, and more room than most people know what to do with.</p>
+    </div>
+    <div class="rv">
+      <div class="head">
+        <p class="eyebrow">The land</p>
+        <h2>Two hundred acres<br>and no fence line<br>in the way</h2>
+      </div>
+      <div class="prose">
+        <p>The ranch sits next to Golds Park in the Dale mining district, off Highway 62 on a well-maintained dirt road. Past the office trailer and the yard stacked with iron, the road opens into flat, secluded desert with a mountain range standing along the back of it. There are no marked pitches. You drive in, look around, and camp wherever you like the best.</p>
+        <p>People come here for the quiet and the room. One guest came back for a second night and couldn't find the spot they'd used the first time. Another had roughly 140 acres entirely to themselves. There's an old iron mine on the property with the pit still open, more off-road routes than you'll get through in one trip, and BLM land right alongside.</p>
+        <p>This is nomadic camping — self-contained is the word. Nothing is plumbed and nothing is wired. Bring your own water, bring more sunscreen than you think you need, and the desert will handle the rest.</p>
+      </div>
+      <div class="host">
+        <img src="https://hipcamp-res.cloudinary.com/image/upload/c_fill,f_auto,h_160,w_160/v1698393759/profile/udpmmqydk4zk1xiug3x5.jpg" alt="" loading="lazy">
+        <div>
+          <b>Teala C.</b>
+          <small>Hosting since October 2023 — accuracy verified by Hipcamp's on-the-ground team</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NIGHT SKY ============ -->
+<section class="sec night sky" id="sky">
+  <div class="starfield" id="stars" aria-hidden="true"></div>
+  <div class="wrap sky__inner">
+    <div class="sky__grid">
+      <div class="rv">
+        <div class="head">
+          <p class="eyebrow">After dark</p>
+          <h2>The reason<br>people book<br>twice</h2>
+          <p class="sub">Twentynine Palms sits far enough from the coastal sprawl that the light domes stop mattering. Guests describe the stars here as endless, and the sunsets and sunrises get named in review after review.</p>
+        </div>
+        <div class="sky__stat">
+          <div><b>Endless</b><small>How guests describe the stars</small></div>
+          <div><b>Both ends</b><small>Sunrise and sunset worth waking for</small></div>
+          <div><b>Verizon</b><small>Service reported on the land</small></div>
+        </div>
+      </div>
+      <div class="sky__media rv">
+        <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1400,q_auto/v1705864322/campground-photos/xfmhfi6qudyriyfuw6n1.jpg" alt="The desert land at Vanishing Rock Ranch under open sky" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOING ============ -->
+<section class="sec wrap">
+  <div class="head rv">
+    <p class="eyebrow">Out here</p>
+    <h2>Something for everyone,<br>mostly involving dirt</h2>
+  </div>
+  <div class="doing rv">
+    <div class="do">
+      <span class="n">01</span>
+      <h3>Off-road routes</h3>
+      <p>All off-road vehicles are welcome — dirt bikes, side-by-sides, whatever you've trailered in. There are more trails here and on the neighbouring BLM land than you'll finish in one trip.</p>
+    </div>
+    <div class="do">
+      <span class="n">02</span>
+      <h3>Hiking &amp; climbing</h3>
+      <p>Plenty of terrain straight from camp, with rock worth climbing and a mountain range at the back of the property to walk toward.</p>
+    </div>
+    <div class="do">
+      <span class="n">03</span>
+      <h3>The old mine</h3>
+      <p>This was a substantial iron mine once, and the pit is still open. It's genuinely interesting to poke around — and a real reason to watch your footing.</p>
+    </div>
+    <div class="do">
+      <span class="n">04</span>
+      <h3>Gold panning &amp; golf</h3>
+      <p>Teala has met guests with panning gear and a set of golf clubs and balls. Hitting a ball into 200 acres of desert is its own kind of driving range.</p>
+    </div>
+    <div class="do">
+      <span class="n">05</span>
+      <h3>Target shooting</h3>
+      <p>Shooting is permitted on the land, which is part of why people choose it. Know your backstop and who else is camped out there.</p>
+    </div>
+    <div class="do">
+      <span class="n">06</span>
+      <h3>Joshua Tree</h3>
+      <p>The North Entrance Station is within a thirty-minute drive — a genuine alternative when the park campgrounds are full or you'd rather have privacy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SITES ============ -->
+<section class="sec wrap" id="sites">
+  <div class="head rv">
+    <p class="eyebrow">Select a site</p>
+    <h2>Two ways to<br>take the land</h2>
+    <p class="sub">Both are dispersed RV or tent sites with no hookups and no marked boundaries. The difference is how far back you want to be.</p>
+  </div>
+  <div class="sites">
+
+    <article class="site rv">
+      <div class="site__pic">
+        <div class="carousel" data-carousel>
+          <div class="track">
+            <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1200,q_auto/v1705864357/campground-photos/ujxu93ex798rxgs0brr2.jpg" alt="Open camping area at the main Vanishing Rock Ranch site" loading="lazy">
+            <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1200,q_auto/v1736190901/campground-photos/w3nntu6gdco8sr7krghw.jpg" alt="Level ground with the mountain range behind" loading="lazy">
+            <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1200,q_auto/v1736190902/campground-photos/nfujqhh2rau4nwfgo3vw.jpg" alt="Another view across the main camping area" loading="lazy">
+          </div>
+          <button class="cbtn prev" type="button" aria-label="Previous photo">&#8249;</button>
+          <button class="cbtn next" type="button" aria-label="Next photo">&#8250;</button>
+          <span class="ccount"></span>
+          <div class="cdots" role="tablist" aria-label="Choose photo"></div>
+        </div>
+        <span class="site__flag">Instant book — 100% (9)</span>
+      </div>
+      <div class="site__body">
+        <h3>Vanishing Rock Ranch</h3>
+        <p class="site__spec">RV or tent — sleeps 60 — vehicles under 45 ft</p>
+        <p class="blurb">The main camping area, reached on the good road straight in from the highway. Level ground, enormous space, and room for a group large enough that you'd struggle to fill it. This is the one most people book, and the one the reviews are written about.</p>
+        <div class="tags">
+          <span class="tag tag--yes">Campfires allowed</span><span class="tag tag--yes">Pets allowed</span>
+          <span class="tag tag--no">No toilet</span><span class="tag tag--no">No potable water</span>
+          <span class="tag tag--no">No hookups</span>
+        </div>
+        <div class="site__actions">
+          <button class="btn btn--ghost" data-book="vrr">Book this site</button>
+          <button class="more" type="button" aria-expanded="false" aria-controls="d-vrr">More detail <span class="chev" aria-hidden="true"></span></button>
+        </div>
+        <div class="detail" id="d-vrr">
+          <div class="inner">
+            <dl>
+              <dt>Type</dt><dd>Dispersed RV or tent site — no marked pitches, camp where you like</dd>
+              <dt>Access</dt><dd>Two-wheel drive the whole way in on maintained dirt road</dd>
+              <dt>Ground</dt><dd>Level, suitable for RVs and campers up to 45 ft</dd>
+              <dt>Rating</dt><dd>100% recommend across 9 ratings</dd>
+            </dl>
+            <p>Guests regularly report having the area entirely to themselves. One party had roughly 140 acres to themselves overnight. Verizon service has been reported on the land.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="site rv">
+      <div class="site__pic">
+        <div class="carousel" data-carousel>
+          <div class="track">
+            <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1200,q_auto/v1770183609/dev-campground-photos/belj8ptccsr9mxahegft.jpg" alt="The Daisy May site set back against the mountain" loading="lazy">
+            <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1200,q_auto/v1770183589/dev-campground-photos/fayqdjxs8l3rlc99k4om.jpg" alt="Open desert ground at the Daisy May site" loading="lazy">
+            <img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1200,q_auto/v1770183570/dev-campground-photos/iv3yamxvnem5jeigub3w.jpg" alt="The mountain backdrop behind the Daisy May site" loading="lazy">
+          </div>
+          <button class="cbtn prev" type="button" aria-label="Previous photo">&#8249;</button>
+          <button class="cbtn next" type="button" aria-label="Next photo">&#8250;</button>
+          <span class="ccount"></span>
+          <div class="cdots" role="tablist" aria-label="Choose photo"></div>
+        </div>
+        <span class="site__flag">Instant book</span>
+      </div>
+      <div class="site__body">
+        <h3>Daisy May</h3>
+        <p class="site__spec">RV or tent — sleeps 10 — vehicles under 45 ft</p>
+        <p class="blurb">Site two sits farther back, right up against the mountain. This is where the old iron mine is, and the pit is still open — give it a wide berth. Open BLM routes run from here in every direction. Turn at the stacked rocks on your left.</p>
+        <div class="tags">
+          <span class="tag tag--yes">Campfires allowed</span><span class="tag tag--yes">Pets allowed</span>
+          <span class="tag tag--no">No toilet</span><span class="tag tag--no">No potable water</span>
+          <span class="tag tag--no">No hookups</span>
+        </div>
+        <div class="site__actions">
+          <button class="btn btn--ghost" data-book="daisy">Book this site</button>
+          <button class="more" type="button" aria-expanded="false" aria-controls="d-daisy">More detail <span class="chev" aria-hidden="true"></span></button>
+        </div>
+        <div class="detail" id="d-daisy">
+          <div class="inner">
+            <dl>
+              <dt>Type</dt><dd>Dispersed RV or tent site, tucked against the mountain</dd>
+              <dt>Finding it</dt><dd>Turn at the stacked rocks on your left, then carry on back</dd>
+              <dt>Take care</dt><dd>A large open mine pit remains on this part of the land</dd>
+              <dt>Beyond</dt><dd>Open BLM routes lead off in every direction from here</dd>
+            </dl>
+            <p>Quieter and more tucked away than the main area, with the mountain giving some cover from wind and sun. Best for a smaller group that wants the back of the property.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ BRING / DON'T ============ -->
+<section class="sec wrap">
+  <div class="head rv">
+    <p class="eyebrow">Nomadic camping</p>
+    <h2>Read this part<br>properly</h2>
+    <p class="sub">There are no toilets, no showers and no potable water anywhere on this land. Self-contained campers do best here, but a tent works fine if you've packed for it.</p>
+  </div>
+  <div class="split">
+    <div class="rv">
+      <h3 style="margin-bottom:16px">Allowed and welcome</h3>
+      <ul class="plist">
+        <li><span class="mk" aria-hidden="true">+</span><div><b>Campfires</b><small>Fire rings are set up. Teala sells firewood — message ahead with your arrival time so it's ready.</small></div></li>
+        <li><span class="mk" aria-hidden="true">+</span><div><b>Dogs</b><small>Pets are allowed at both sites.</small></div></li>
+        <li><span class="mk" aria-hidden="true">+</span><div><b>Dirt bikes and side-by-sides</b><small>All off-road vehicles are welcome, with trails running straight off the property.</small></div></li>
+        <li><span class="mk" aria-hidden="true">+</span><div><b>Big groups, kids and events</b><small>The main site sleeps 60. Group trips are a regular thing here.</small></div></li>
+        <li><span class="mk" aria-hidden="true">+</span><div><b>Rigs up to 45 feet</b><small>The road in is passable by two-wheel drive the whole way to the camping area.</small></div></li>
+        <li><span class="mk" aria-hidden="true">+</span><div><b>Tent rental</b><small>Teala rents tents as an extra. Confirm it with her before you arrive.</small></div></li>
+      </ul>
+    </div>
+    <div class="rv">
+      <h3 style="margin-bottom:16px">Bring it yourself</h3>
+      <ul class="plist plist--no">
+        <li><span class="mk" aria-hidden="true">&minus;</span><div><b>All of your water</b><small>There is no potable water on the property. Bring more than you think a desert trip needs.</small></div></li>
+        <li><span class="mk" aria-hidden="true">&minus;</span><div><b>Your own toilet</b><small>No toilets and no showers. Self-contained rigs are recommended for a reason.</small></div></li>
+        <li><span class="mk" aria-hidden="true">&minus;</span><div><b>Power</b><small>No electrical or water hookups at either site.</small></div></li>
+        <li><span class="mk" aria-hidden="true">&minus;</span><div><b>Sunscreen and shade</b><small>This is open Mojave desert with very little cover. Plan for the sun.</small></div></li>
+        <li><span class="mk" aria-hidden="true">&minus;</span><div><b>Attention to your footing</b><small>Teala's own advice: always look down where you're stepping. There's an open mine pit near site two.</small></div></li>
+        <li><span class="mk" aria-hidden="true">&minus;</span><div><b>Tolerance for engine noise</b><small>The off-road trails around the land see use, including at night. Seclusion here doesn't always mean silence.</small></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="sec night" id="photos">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">The place</p>
+      <h2>What it actually<br>looks like</h2>
+    </div>
+    <div class="gal" id="gal">
+      <button class="gitem a1" aria-label="Enlarge photo 1"><img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1400,q_auto/v1705864318/campground-photos/jal1tf2ymav7ewegkwy0.jpg" alt="Desert terrain with mountains behind" loading="lazy"></button>
+      <button class="gitem a2" aria-label="Enlarge photo 2"><img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1400,q_auto/v1705864414/campground-photos/qsnmvk6tovj7obf2wcr4.jpg" alt="Wide view of the open land" loading="lazy"></button>
+      <button class="gitem a3" aria-label="Enlarge photo 3"><img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1000,q_auto/v1705864321/campground-photos/lgpysyajs4xrg5m3m1en.jpg" alt="Fire ring set up on the land" loading="lazy"></button>
+      <button class="gitem a4" aria-label="Enlarge photo 4"><img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1000,q_auto/v1705864401/campground-photos/o1zhirx5sjpd5hhxalm8.jpg" alt="Golf clubs and balls provided by the host" loading="lazy"></button>
+      <button class="gitem a5" aria-label="Enlarge photo 5"><img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1000,q_auto/v1705864322/campground-photos/xfmhfi6qudyriyfuw6n1.jpg" alt="The desert land under open sky" loading="lazy"></button>
+      <button class="gitem a6" aria-label="Enlarge photo 6"><img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1400,q_auto/v1705864357/campground-photos/ujxu93ex798rxgs0brr2.jpg" alt="The main camping area" loading="lazy"></button>
+      <button class="gitem a7" aria-label="Enlarge photo 7"><img src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1000,q_auto/v1736190901/campground-photos/w3nntu6gdco8sr7krghw.jpg" alt="Another view of the camping area" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close viewer">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+  <p class="lb-count" id="lbCount"></p>
+</div>
+
+<!-- ============ REVIEWS ============ -->
+<section class="sec wrap" id="reviews">
+  <div class="head rv">
+    <p class="eyebrow">100% recommend — 9 ratings</p>
+    <h2>What campers<br>came back saying</h2>
+  </div>
+  <div class="rrow" id="rrow">
+    <article class="rcard">
+      <p class="q">Great time exploring</p>
+      <p class="body">Rated both sites as fantastic after a group trip — spectacular views, plenty of hiking, endless stars, and nobody else visible in any direction. Found Teala responsive while they were finding their way in.</p>
+      <p class="who">Steve K. <span>— tent, group trip, March</span></p>
+    </article>
+    <article class="rcard">
+      <p class="q">So much space</p>
+      <p class="body">Came back for a second night and couldn't find their original spot, the place is that big. Called it a strong alternative to staying inside Joshua Tree, and mentioned Teala turning up with a large delivery of firewood — plus an old gold mine to discover.</p>
+      <p class="who">Christoph D. <span>— 20 ft campervan with kids, December</span></p>
+    </article>
+    <article class="rcard">
+      <p class="q">Easy to follow, easy to explore</p>
+      <p class="body">Plenty of land to choose a spot from, driving directions that worked, and dirt roads running off in every direction.</p>
+      <p class="who">Bing K. <span>— 23 ft campervan with kids, November</span></p>
+    </article>
+    <article class="rcard">
+      <p class="q">Wide open, and honest about the noise</p>
+      <p class="body">Had roughly 140 acres to themselves for the night and got exactly the uncrowded trip they wanted. Noted that the off-road trails nearby carry traffic after dark and can be loud — the seclusion and space still delivered.</p>
+      <p class="who">Alec M. <span>— tent, October</span></p>
+    </article>
+    <article class="rcard">
+      <p class="q">Best spot found in the area</p>
+      <p class="body">Picked it as the best camping they'd found near Joshua Tree — secluded, beautiful, and a strong place to look at the sky. Planning a return.</p>
+      <p class="who">Oomar P. <span>— tent, group trip, September</span></p>
+    </article>
+    <article class="rcard">
+      <p class="q">Made it in a Promaster with no trouble</p>
+      <p class="body">Beautifully secluded, close to the park but clear of the busy-season traffic. Confirmed a 159-inch-wheelbase van got in without any issue, and recommended it for anyone needing two-wheel-drive access.</p>
+      <p class="who">Justin K. <span>— 13 ft campervan, January</span></p>
+    </article>
+    <article class="rcard">
+      <p class="q">Greeted with gold pans and golf clubs</p>
+      <p class="body">Parked where they liked with no neighbours bothering them, had Verizon service, and were met by Teala with panning gear and clubs to use. Recommends it for self-contained RVs and tent campers.</p>
+      <p class="who">Jared G. <span>— 23 ft Class C, January</span></p>
+    </article>
+  </div>
+  <div class="rnav">
+    <button id="rPrev" aria-label="Previous reviews">&#8249;</button>
+    <button id="rNext" aria-label="Next reviews">&#8250;</button>
+  </div>
+  <p class="note">Summaries written from verified guest reviews on the ranch's Hipcamp listing, including the notes about trail noise. Ratings shown are the listing's own.</p>
+</section>
+
+<!-- ============ GETTING HERE ============ -->
+<section class="sec night" id="arrive">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Twentynine Palms, San Bernardino County</p>
+      <h2>Getting in</h2>
+      <p class="sub">The precise address comes through after booking, to protect the host's privacy. This is the shape of the arrival.</p>
+    </div>
+    <ol class="steps">
+      <li>
+        <div>
+          <h3>Off Highway 62</h3>
+          <p>The turn is off the highway onto a well-maintained dirt road next to Golds Park, in the Dale mining district. Two-wheel drive handles it all the way to the camping area.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>The office trailer and the iron yard</h3>
+          <p>You'll pass an office trailer at the entrance by the highway and a yard with big piles of iron. That's the right place — keep going.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Follow the good road and the signage</h3>
+          <p>Signs mark the way in. For Daisy May, turn at the stacked rocks on your left and carry on back toward the mountain.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Camp wherever you like the best</h3>
+          <p>No numbered pitches, no assigned spots. Drive the area, find level ground and a view you want to wake up to, and set up.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Order extras in advance</h3>
+          <p>Firewood and tent rental are arranged directly with Teala. Message her with roughly when you'll arrive and what you want, so it's waiting.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ BOOK ============ -->
+<section class="sec night book-sec" id="book" style="background:var(--night-2)">
+  <div class="wrap">
+    <div class="book">
+      <div class="rv">
+        <div class="head">
+          <p class="eyebrow">Request a stay</p>
+          <h2>Pick your<br>nights</h2>
+        </div>
+        <p class="lede">Tell Teala when you're coming and what you're bringing. She'll confirm availability, send directions, and get any firewood or tent rental ready.</p>
+        <div class="pricebox">
+          <div class="pline"><span id="pRate">$28.50 &times; 0 nights</span><span id="pSub">$0.00</span></div>
+          <div class="pline muted"><span>Site</span><span id="pSite">Not selected</span></div>
+          <div class="pline muted"><span>Guests</span><span id="pGuests">2</span></div>
+          <div class="pline total"><span>Estimate</span><span id="pTotal">$0.00</span></div>
+        </div>
+        <p class="formnote" style="margin-top:14px">Based on the listing rate of $28.50 a night. Firewood, tent rental, fees and taxes are confirmed by the host.</p>
+      </div>
+
+      <div>
+        <form id="bookForm" novalidate>
+          <div class="field" id="f-site">
+            <label for="site">Which site</label>
+            <select id="site" name="site" required>
+              <option value="">Choose a site</option>
+              <option value="vrr">Vanishing Rock Ranch — sleeps 60</option>
+              <option value="daisy">Daisy May — sleeps 10, against the mountain</option>
+            </select>
+            <span class="hint" id="siteHint">Both are dispersed sites with no hookups.</span>
+          </div>
+
+          <div class="frow">
+            <div class="field" id="f-in">
+              <label for="checkin">Arriving</label>
+              <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="field" id="f-out">
+              <label for="checkout">Leaving</label>
+              <input type="date" id="checkout" name="checkout" required>
+              <span class="hint" id="dateHint">Minimum one night.</span>
+            </div>
+          </div>
+
+          <div class="frow">
+            <div class="field">
+              <label for="guests">Guests</label>
+              <div class="stepper">
+                <button type="button" id="gMinus" aria-label="One fewer guest">&minus;</button>
+                <output id="guests">2</output>
+                <button type="button" id="gPlus" aria-label="One more guest">+</button>
+              </div>
+              <span class="hint" id="guestHint">Choose a site to set the limit.</span>
+            </div>
+            <div class="field" id="f-rig">
+              <label for="rig">Rig length (feet)</label>
+              <input type="number" id="rig" name="rig" min="0" max="80" step="1" placeholder="e.g. 23" inputmode="numeric">
+              <span class="hint" id="rigHint">Under 45 ft. Leave blank if you're tenting.</span>
+            </div>
+          </div>
+
+          <div class="frow">
+            <div class="field" id="f-name">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="First and last" required>
+            </div>
+            <div class="field" id="f-email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Bringing / needing</label>
+            <div class="checks">
+              <label class="check"><input type="checkbox" id="x-wood"><span class="box" aria-hidden="true"></span><span>Firewood — I'd like to buy a load</span></label>
+              <label class="check"><input type="checkbox" id="x-tent"><span class="box" aria-hidden="true"></span><span>Tent rental from the host</span></label>
+              <label class="check"><input type="checkbox" id="x-ohv"><span class="box" aria-hidden="true"></span><span>Bringing off-road vehicles</span></label>
+              <label class="check"><input type="checkbox" id="x-pets"><span class="box" aria-hidden="true"></span><span>Bringing a dog</span></label>
+            </div>
+            <span class="hint">Extras are arranged directly with Teala and priced separately.</span>
+          </div>
+
+          <div class="field">
+            <label for="notes">Arrival time and anything else</label>
+            <textarea id="notes" name="notes" placeholder="Roughly when you'll get in, group size, questions about the road&hellip;"></textarea>
+          </div>
+
+          <button class="btn btn--lg btn--sun" type="submit" style="justify-self:start">Send request</button>
+          <p class="formnote">This sends a request, not a confirmed booking. Teala replies with availability and the exact directions.</p>
+        </form>
+
+        <div class="success" id="success" role="status">
+          <h3>Request sent</h3>
+          <p id="successMsg"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STICKY BOOKING BAR ============ -->
+<div class="sbar" id="sbar">
+  <div class="sbar__price">
+    <b id="sbarPrice">$28.50</b>
+    <small id="sbarUnit">Per night</small>
+  </div>
+  <p class="sbar__mid" id="sbarMid">200 acres near Joshua Tree — camp wherever you like</p>
+  <a class="btn btn--sun" href="#book" id="sbarBtn">Check dates</a>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <h3>Come out to the desert</h3>
+        <a class="btn btn--sun" href="#book">Check dates</a>
+      </div>
+      <div>
+        <h4>The ranch</h4>
+        <ul>
+          <li><a href="#land">The land</a></li>
+          <li><a href="#sky">Night sky</a></li>
+          <li><a href="#sites">Both sites</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Before you come</h4>
+        <ul>
+          <li><a href="#arrive">Getting here</a></li>
+          <li><a href="#sites">What to bring</a></li>
+          <li><a href="#book">Contact Teala</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bot">
+      <span>Vanishing Rock Ranch — Twentynine Palms, San Bernardino County, California</span>
+      <span>Exact address provided after booking, to respect the host's privacy.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- NAV ---------- */
+  var nav = document.getElementById("nav");
+  function onScroll(){ nav.classList.toggle("stuck", window.scrollY > window.innerHeight * 0.7); }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  var burger = document.getElementById("burger");
+  var drawer = document.getElementById("drawer");
+  function toggleDrawer(open){
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    drawer.classList.toggle("open", open);
+    document.body.style.overflow = open ? "hidden" : "";
+  }
+  burger.addEventListener("click", function(){ toggleDrawer(burger.getAttribute("aria-expanded") !== "true"); });
+  Array.prototype.forEach.call(drawer.querySelectorAll("a"), function(a){
+    a.addEventListener("click", function(){ toggleDrawer(false); });
+  });
+
+  /* ---------- REVEALS ---------- */
+  var rv = document.querySelectorAll(".rv");
+  if(reduce || !("IntersectionObserver" in window)){
+    Array.prototype.forEach.call(rv, function(el){ el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, {threshold:0.1, rootMargin:"0px 0px -8% 0px"});
+    Array.prototype.forEach.call(rv, function(el){ io.observe(el); });
+  }
+
+  /* ---------- STARFIELD ---------- */
+  var starWrap = document.getElementById("stars");
+  if(starWrap){
+    var n = window.innerWidth < 760 ? 60 : 130;
+    var html = "";
+    for(var s = 0; s < n; s++){
+      var size = (Math.random() * 2.1 + 0.6).toFixed(2);
+      var x = (Math.random() * 100).toFixed(2);
+      var y = (Math.random() * 100).toFixed(2);
+      var op = (Math.random() * 0.55 + 0.25).toFixed(2);
+      var anim = reduce ? "" : "animation:twinkle " + (2.6 + Math.random() * 4.5).toFixed(2) +
+                 "s ease-in-out " + (Math.random() * 5).toFixed(2) + "s infinite;";
+      html += '<i style="left:' + x + '%;top:' + y + '%;width:' + size + 'px;height:' + size +
+              'px;opacity:' + op + ';' + anim + '"></i>';
+    }
+    starWrap.innerHTML = html;
+  }
+
+  /* ---------- SITE CARD CAROUSELS ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll("[data-carousel]"), function(car){
+    var track = car.querySelector(".track");
+    var slides = car.querySelectorAll(".track img");
+    var dotWrap = car.querySelector(".cdots");
+    var count = car.querySelector(".ccount");
+    var at = 0;
+
+    for(var d = 0; d < slides.length; d++){
+      var dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("role","tab");
+      dot.setAttribute("aria-label","Photo " + (d + 1));
+      (function(n){ dot.addEventListener("click", function(){ go(n); }); })(d);
+      dotWrap.appendChild(dot);
+    }
+    var dots = dotWrap.querySelectorAll("button");
+
+    function go(n){
+      at = (n + slides.length) % slides.length;
+      track.style.transform = "translateX(" + (-at * 100) + "%)";
+      Array.prototype.forEach.call(dots, function(b, i){
+        b.setAttribute("aria-current", i === at ? "true" : "false");
+      });
+      count.textContent = (at + 1) + " / " + slides.length;
+    }
+
+    car.querySelector(".prev").addEventListener("click", function(){ go(at - 1); });
+    car.querySelector(".next").addEventListener("click", function(){ go(at + 1); });
+    car.addEventListener("keydown", function(e){
+      if(e.key === "ArrowLeft"){ e.preventDefault(); go(at - 1); }
+      if(e.key === "ArrowRight"){ e.preventDefault(); go(at + 1); }
+    });
+
+    /* swipe */
+    var x0 = null;
+    car.addEventListener("touchstart", function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+    car.addEventListener("touchend", function(e){
+      if(x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if(Math.abs(dx) > 40) go(dx < 0 ? at + 1 : at - 1);
+      x0 = null;
+    }, {passive:true});
+
+    go(0);
+  });
+
+  /* ---------- EXPANDABLE DETAIL ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll(".more"), function(btn){
+    var panel = document.getElementById(btn.getAttribute("aria-controls"));
+    btn.addEventListener("click", function(){
+      var open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", open ? "false" : "true");
+      btn.firstChild.textContent = open ? "More detail " : "Less detail ";
+      panel.style.height = open ? "0px" : panel.firstElementChild.offsetHeight + "px";
+    });
+    window.addEventListener("resize", function(){
+      if(btn.getAttribute("aria-expanded") === "true"){
+        panel.style.height = panel.firstElementChild.offsetHeight + "px";
+      }
+    });
+  });
+
+  /* ---------- STICKY BOOKING BAR ---------- */
+  var sbar = document.getElementById("sbar");
+  var sbarMid = document.getElementById("sbarMid");
+  var sbarPrice = document.getElementById("sbarPrice");
+  var sbarUnit = document.getElementById("sbarUnit");
+  var bookSec = document.getElementById("book");
+  var footEl = document.querySelector(".foot");
+
+  function updateBar(){
+    var past = window.scrollY > window.innerHeight * 0.85;
+    var bookRect = bookSec.getBoundingClientRect();
+    var footRect = footEl.getBoundingClientRect();
+    var inBooking = bookRect.top < window.innerHeight * 0.75 && bookRect.bottom > 0;
+    var inFooter = footRect.top < window.innerHeight - 60;
+    var show = past && !inBooking && !inFooter;
+    sbar.classList.toggle("on", show);
+    document.body.classList.toggle("bar-on", show);
+  }
+  window.addEventListener("scroll", updateBar, {passive:true});
+  window.addEventListener("resize", updateBar);
+
+  /* ---------- LIGHTBOX ---------- */
+  var items = Array.prototype.slice.call(document.querySelectorAll("#gal .gitem"));
+  var lb = document.getElementById("lightbox");
+  var lbImg = document.getElementById("lbImg");
+  var lbCount = document.getElementById("lbCount");
+  var idx = 0, lastFocus = null;
+
+  function show(i){
+    idx = (i + items.length) % items.length;
+    var img = items[idx].querySelector("img");
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCount.textContent = (idx + 1) + " / " + items.length;
+  }
+  function openLb(i){
+    lastFocus = document.activeElement;
+    show(i);
+    lb.classList.add("on");
+    document.body.style.overflow = "hidden";
+    document.getElementById("lbClose").focus();
+  }
+  function closeLb(){
+    lb.classList.remove("on");
+    document.body.style.overflow = "";
+    if(lastFocus) lastFocus.focus();
+  }
+  items.forEach(function(it, i){ it.addEventListener("click", function(){ openLb(i); }); });
+  document.getElementById("lbClose").addEventListener("click", closeLb);
+  document.getElementById("lbPrev").addEventListener("click", function(){ show(idx - 1); });
+  document.getElementById("lbNext").addEventListener("click", function(){ show(idx + 1); });
+  lb.addEventListener("click", function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function(e){
+    if(!lb.classList.contains("on")) return;
+    if(e.key === "Escape") closeLb();
+    if(e.key === "ArrowLeft") show(idx - 1);
+    if(e.key === "ArrowRight") show(idx + 1);
+  });
+
+  /* ---------- REVIEWS ---------- */
+  var rrow = document.getElementById("rrow");
+  function scrollRow(dir){
+    var card = rrow.querySelector(".rcard");
+    var step = card ? card.offsetWidth + 2 : 320;
+    rrow.scrollBy({left: dir * step, behavior: reduce ? "auto" : "smooth"});
+  }
+  document.getElementById("rPrev").addEventListener("click", function(){ scrollRow(-1); });
+  document.getElementById("rNext").addEventListener("click", function(){ scrollRow(1); });
+
+  /* ---------- BOOKING ---------- */
+  var SITES = {
+    "vrr":   {name:"Vanishing Rock Ranch", max:60, rig:45, rate:28.5},
+    "daisy": {name:"Daisy May",            max:10, rig:45, rate:28.5}
+  };
+
+  var siteSel  = document.getElementById("site");
+  var checkin  = document.getElementById("checkin");
+  var checkout = document.getElementById("checkout");
+  var guestsOut= document.getElementById("guests");
+  var gMinus   = document.getElementById("gMinus");
+  var gPlus    = document.getElementById("gPlus");
+  var guestHint= document.getElementById("guestHint");
+  var rig      = document.getElementById("rig");
+  var rigHint  = document.getElementById("rigHint");
+  var siteHint = document.getElementById("siteHint");
+  var dateHint = document.getElementById("dateHint");
+  var guests   = 2;
+
+  function isoLocal(d){
+    return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0,10);
+  }
+  checkin.min = isoLocal(new Date());
+  checkout.min = checkin.min;
+
+  function nights(){
+    if(!checkin.value || !checkout.value) return 0;
+    var a = new Date(checkin.value + "T00:00:00");
+    var b = new Date(checkout.value + "T00:00:00");
+    var n = Math.round((b - a) / 86400000);
+    return n > 0 ? n : 0;
+  }
+  function money(v){ return "$" + v.toFixed(2); }
+  function currentSite(){ return SITES[siteSel.value] || null; }
+
+  function updateGuests(){
+    var s = currentSite();
+    var max = s ? s.max : 60;
+    if(guests > max) guests = max;
+    if(guests < 1) guests = 1;
+    guestsOut.textContent = guests;
+    gMinus.disabled = guests <= 1;
+    gPlus.disabled = guests >= max;
+    guestHint.textContent = s ? (s.name + " sleeps up to " + max + ".") : "Choose a site to set the limit.";
+  }
+
+  function updateRig(){
+    var wrapEl = document.getElementById("f-rig");
+    var len = parseInt(rig.value, 10);
+    if(!isNaN(len) && len > 45){
+      rigHint.textContent = "Vehicles must be under 45 ft at both sites.";
+      rigHint.classList.add("warn");
+      wrapEl.classList.add("err");
+    } else {
+      rigHint.textContent = "Under 45 ft. Leave blank if you're tenting.";
+      rigHint.classList.remove("warn");
+      wrapEl.classList.remove("err");
+    }
+  }
+
+  function updateDates(){
+    if(checkin.value){
+      var a = new Date(checkin.value + "T00:00:00");
+      a.setDate(a.getDate() + 1);
+      checkout.min = isoLocal(a);
+      if(checkout.value && checkout.value <= checkin.value) checkout.value = checkout.min;
+    }
+    var n = nights();
+    if(checkin.value && checkout.value && n < 1){
+      dateHint.textContent = "Your leaving date has to come after your arrival date.";
+      dateHint.classList.add("warn");
+      document.getElementById("f-out").classList.add("err");
+    } else {
+      dateHint.textContent = n > 0 ? (n + (n === 1 ? " night" : " nights") + " in the desert.") : "Minimum one night.";
+      dateHint.classList.remove("warn");
+      document.getElementById("f-out").classList.remove("err");
+    }
+  }
+
+  function updatePrice(){
+    var s = currentSite();
+    var rate = s ? s.rate : 28.5;
+    var n = nights();
+    var sub = rate * n;
+    document.getElementById("pRate").textContent = money(rate) + " \u00d7 " + n + (n === 1 ? " night" : " nights");
+    document.getElementById("pSub").textContent = money(sub);
+    document.getElementById("pSite").textContent = s ? s.name : "Not selected";
+    document.getElementById("pGuests").textContent = guests;
+    document.getElementById("pTotal").textContent = money(sub);
+
+    /* mirror into the sticky bar */
+    if(n > 0 && s){
+      sbarPrice.textContent = money(sub);
+      sbarUnit.textContent = n + (n === 1 ? " night total" : " nights total");
+      sbarMid.textContent = s.name + " — " + guests + (guests === 1 ? " guest" : " guests");
+    } else if(s){
+      sbarPrice.textContent = money(rate);
+      sbarUnit.textContent = "Per night";
+      sbarMid.textContent = s.name + " — add dates for an estimate";
+    } else {
+      sbarPrice.textContent = money(rate);
+      sbarUnit.textContent = "Per night";
+      sbarMid.textContent = "200 acres near Joshua Tree — camp wherever you like";
+    }
+  }
+
+  function refresh(){ updateGuests(); updateRig(); updateDates(); updatePrice(); }
+
+  siteSel.addEventListener("change", function(){
+    var s = currentSite();
+    siteHint.textContent = s
+      ? (siteSel.value === "daisy"
+          ? "Farther back against the mountain. Watch for the open mine pit."
+          : "The main area, straight in on the good road.")
+      : "Both are dispersed sites with no hookups.";
+    document.getElementById("f-site").classList.remove("err");
+    refresh();
+  });
+  checkin.addEventListener("change", refresh);
+  checkout.addEventListener("change", refresh);
+  rig.addEventListener("input", updateRig);
+  gMinus.addEventListener("click", function(){ guests--; refresh(); });
+  gPlus.addEventListener("click", function(){ guests++; refresh(); });
+  refresh();
+  updateBar();
+
+  Array.prototype.forEach.call(document.querySelectorAll("[data-book]"), function(btn){
+    btn.addEventListener("click", function(){
+      siteSel.value = btn.getAttribute("data-book");
+      siteSel.dispatchEvent(new Event("change"));
+      document.getElementById("book").scrollIntoView({behavior: reduce ? "auto" : "smooth", block:"start"});
+      setTimeout(function(){ siteSel.focus({preventScroll:true}); }, reduce ? 0 : 700);
+    });
+  });
+
+  var form = document.getElementById("bookForm");
+  var success = document.getElementById("success");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var ok = true;
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+
+    [["f-site", !siteSel.value],
+     ["f-in", !checkin.value],
+     ["f-out", !checkout.value || nights() < 1],
+     ["f-name", !name.value.trim()],
+     ["f-email", !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)]]
+    .forEach(function(pair){
+      document.getElementById(pair[0]).classList.toggle("err", pair[1]);
+      if(pair[1]) ok = false;
+    });
+
+    var len = parseInt(rig.value, 10);
+    if(!isNaN(len) && len > 45) ok = false;
+
+    if(!ok){
+      var firstErr = form.querySelector(".err input, .err select");
+      if(firstErr) firstErr.focus();
+      return;
+    }
+
+    var extras = [];
+    if(document.getElementById("x-wood").checked) extras.push("firewood");
+    if(document.getElementById("x-tent").checked) extras.push("a tent rental");
+    if(document.getElementById("x-ohv").checked) extras.push("off-road vehicles");
+    if(document.getElementById("x-pets").checked) extras.push("a dog");
+
+    var s = currentSite();
+    var n = nights();
+    document.getElementById("successMsg").textContent =
+      "Thanks " + name.value.trim().split(" ")[0] + " \u2014 your request for " + s.name + ", " +
+      n + (n === 1 ? " night" : " nights") + " for " + guests + (guests === 1 ? " guest" : " guests") +
+      (extras.length ? ", with " + extras.join(", ").replace(/,([^,]*)$/, " and$1") : "") +
+      ", is with Teala. She'll reply to " + email.value + " with availability and directions in.";
+    form.classList.add("done");
+    success.classList.add("on");
+    success.scrollIntoView({behavior: reduce ? "auto" : "smooth", block:"center"});
+  });
+
+  /* ---------- TICKER ---------- */
+  var ticker = document.getElementById("ticker");
+  if("IntersectionObserver" in window && !reduce){
+    new IntersectionObserver(function(en){
+      ticker.style.animationPlayState = en[0].isIntersecting ? "running" : "paused";
+    }).observe(ticker);
+  }
+})();
+</script>
+</body>
+</html>
